@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Html Content</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+	<style type="text/css">
+		body{
+			background: #fff;	
+			font-family: Tahoma, Geneva, sans-serif!important;	
+			color: #000;	
+		}
+		header{
+			background: #dbdbdb;
+			width: 100%;
+			position: fixed;
+			top: 0;
+			left: 0;
+			z-index: 2
+		}
+		h1{
+			color:#00aeff;
+    		font-weight: 600;
+		}
+		.content{
+			padding: 20px;
+		    background: #dbdbdb;
+		    border-radius: 20px;
+		    margin: 10px 0;
+		    overflow-x: auto;
+		}
+		.line{
+			border-right: 2px solid #fff;
+			border-left: 2px solid #fff;
+		}
+		.title{
+			font-size: 35px;
+			color: #00aeff;
+			font-weight: 600;
+		}
+		table{color: #000; width: 100%}
+		tr{border-bottom: 2px solid #fff;}
+		.nav-link.active{background-color: #00aeff!important;}
+		td{padding: 10px}
+		.main{margin-top: 7%}
+		textarea{
+			width: 100%;
+			min-width: 400px;
+			min-height: 100px
+		}
+		@media (max-width: 1199px){
+			.main{margin-top: 10%}
+		}
+		@media (max-width: 967px){
+			.main{margin-top: 15%}
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<div class="container d-flex flex-row flex-wrap justify-content-between align-items-center">
+			<div class="col-12 col-md-6"><h1>Hello content people))</h1></div>
+			<div class="col-12 col-md-6 menu">
+				<ul class="nav nav-pills d-flex justify-content-end">
+				  <li class="nav-item">
+				    <a class="nav-link active" href="#block_1">Теги</a>
+				  </li>
+				  <li class="nav-item">
+				    <a class="nav-link" href="#block_2">Стили</a>
+				  </li>
+				  <li class="nav-item">
+				    <a class="nav-link" href="#block_3">Дополнительно</a>
+				  </li>
+				</ul>
+			</div>
+		</div>
+	</header>
+	<div class="main">
+		<div class="container">
+			<div class="block block_1" id="block_1">
+				<div class="col-12 title text-center">Поговорим немного о тегах</div>
+				<div class="col-12 content">
+					<p>Необходимо раз и навсегда запомнить что если есть открывающий тег <…> то обязательно должен быть и закрывающий </…><br>
+					Хотя есть и исключения</p>
+					<table>
+				      <thead>
+				          <tr><th>Мне надо:</th>
+				          <th>Нужно писать:</th>
+				          <th>Выглядеть будет:</th>
+				      </tr></thead>
+				      <tbody>
+				        <tr>
+				          <td>Вставить параграф</td>
+				          <td class="line">
+				          	<textarea><p>Текст параграфа</p></textarea>
+				          </td>
+				          <td><p>Первый параграф</p><p>Второй параграф</p></td>
+				        </tr>
+				        <tr>
+				          <td>Перенести текст на строку ниже</td>
+				          <td class="line">
+				          	<textarea>В отличие от тега p,<br> тег br не создает пустую строку</textarea>
+				          <td>В отличие от тега p,<br> тег br не создает пустую строку</td>
+				        </tr>
+				        <tr>
+				          <td>Разместить заголовок</td>
+				          <td class="line">
+				          	<textarea><h5>Существует шесть уровней заголовков: от h1 до h6</h5></textarea>
+
+				          </td>
+				          <td><h5>Существует шесть уровней заголовков: от h1 до h6</h5></td>
+				        </tr>
+				        <tr>
+				          <td>Выделить текст жирным</td>
+				          <td class="line"><textarea><b>Я - жирный текст</b></textarea></td>
+				          <td><b>Я - жирный текст</b></td>
+				        </tr>				        
+				        <tr>
+				          <td>Выделить текст курсивом</td>
+				          <td class="line"><textarea><i>Я написан курсивом</i></textarea></td>
+				          <td><i>Тоже самое с курсивом</i></td>
+				        </tr>			        
+				        <tr>
+				          <td>Вставить ссылку</td>
+				          <td class="line"><textarea><a href="https://errors-seeds-p.com/" target="_blank">Нетология</a></textarea></td>
+				          <td><a href="https://errors-seeds-p.com/" target="_blank">Errors Seeds</a></td>
+				        </tr>
+				        <tr>
+				          <td>Вставить картинку</td>
+				          <td class="line"><textarea><img src="/image/catalog/news/vakansii-2.jpg" alt="картинка"></textarea></td>
+				          <td><img src="https://errors-seeds-st.com/image/catalog/news/vakansii-2.jpg" alt="Нет фото" style="width: 100%"></td>
+				        </tr>
+				        <tr>
+				          <td>Задать класс тегу</td>
+				          <td class="line"><textarea><p class="new">Абзац с классом</p></textarea></td>
+				          <td>Класс присвоит тексту стили</td>
+				        </tr>				        
+				        <tr>
+				          <td>Создать маркированный список</td>
+				          <td class="line">
+				          	<textarea>
+<ul>
+	<li>Певый пункт</li>
+	<li>Второй пункт</li>
+	<li>Третий пункт</li>
+</ul>
+				          	</textarea>
+				          </td>
+				          <td>
+				            <ul>
+				              <li>Первый пункт</li>
+				              <li>Второй пункт</li>
+				              <li>Третий пункт</li>
+				            </ul>
+				          </td>
+				        </tr>
+				        <tr>
+				          <td>Создать нумерованный список</td>
+				          <td class="line">
+				          	<textarea>
+<ol>
+	<li>Певый пункт</li>
+	<li>Второй пункт</li>
+	<li>Третий пункт</li>
+</ol>
+				          	</textarea>
+				          </td>
+				          <td>
+				            <ol>
+				              <li>Первый пункт</li>
+				              <li>Второй пункт</li>
+				              <li>Третий пункт</li>
+				            </ol>
+				          </td>
+				        </tr>
+				        <tr>
+				          <td>Изменить нумерацию в списке</td>
+				          <td class="line">
+				          	<textarea>
+<ol start="3">
+	...
+</ol>
+				          	</textarea>
+				          </td>
+				          <td>
+				             <ol start="3">
+				               <li>Три</li>
+				               <li>Четыре</li>
+				               <li>Пять</li>
+				             </ol>
+				          </td>
+				        </tr>				        
+				        <tr>
+				          <td>Вложить один список в другой</td>
+				          <td class="line">
+				          	<textarea>
+<ol>
+	<li>Пункт списка
+		<ul>
+			<li>Пункт вложенного списка</li>
+		</ul>
+	</li>
+</ol>
+				          	</textarea>
+				          </td>
+				          <td>
+				            <ol>
+				              <li> Пункт списка
+				                <ul>
+				                  <li>Пункт вложенного списка</li>
+				                </ul>
+				              </li>
+				            </ol>
+				          </td>
+				        </tr>
+				      </tbody>
+				    </table>
+				</div>
+			</div>		
+			<div class="block block_2" id="block_2">
+				<div class="col-12 title text-center">Стили</div>
+				<div class="col-12 content">
+					<p>Стили прописываются по принципу _название стиля_ : _значение стиля_ (Пример color: #fff)</p>
+					<p>Что бы перечислить несколько стилей, раздели их точкой с запятой (Пример color: #fff ; text-transform: uppercase;)</p>
+					<p>Что бы задать стили для тега нужно:</p>
+					<table>
+						<thead>
+							<tr>
+								<td>Нужно</td>
+								<td>Пример</td>
+								<td>Что получится</td>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>
+									В в пределах "головы" тега написать style="" 
+								</td>
+								<td class="line">
+									<textarea><p style="color: #00A500; text-transform: uppercase;">Какой-то текст</p></textarea>
+								</td>
+								<td>
+									<p style="color: #00A500; text-transform: uppercase;">Зеленый и все буквы заглавные</p>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<p>Стили которые могут пригодиться</p>
+					<table>
+						<thead>
+							<tr>
+								<td>Что делает</td>
+								<td>Стиль</td>
+								<td>Возможные значения</td>
+								<td>Где</td>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>
+									Заливка фона 
+								</td>
+								<td>
+									background: 
+								</td>
+								<td class="line">
+									<span style="background: #000000; color: #fff">background: #000000 - цвет</span><br>
+									<span style="background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR15maQ8xyOeBd-1b9HZcPtfSH2zgQ0IRsVTT1AdRNwjr92uqdhPA)">background: url(images/hand.png) - фоновая картинка</span>
+								</td>
+								<td>
+									Можно применять к любому тегу
+								</td>
+							</tr>
+							<tr>
+								<td>
+									Границы  
+								</td>
+								<td>
+									border: 
+								</td>
+								<td class="line">
+									border: 1px solid #000000 - Полная запись<br>
+									Можно границу сделать разными линиями:<br>
+									<span style="border: 2px dotted #000000">dotted (точки)</span> <span style="border: 2px dashed #000000">dashed (пунктир)</span> <span style="border: 2px solid #000000">solid (линия)</span>
+								</td>
+								<td>
+									Можно применять к любому тегу
+								</td>
+							</tr>
+							<tr>
+								<td>
+									Цвет текста 
+								</td>
+								<td>
+									color: 
+								</td>
+								<td class="line">
+									<span style="color: #000000">color: #000000 - в цифрах</span><br>
+									<span style="color: yellow">color: yellow - название цвета (не рекомендую)</span>
+								</td>
+								<td>
+									Можно применять к любому тегу
+								</td>
+							</tr>
+							<tr>
+								<td>
+									Шрифт 
+								</td>
+								<td>
+									font-family: 
+								</td>
+								<td class="line">
+									<span style="font-family:Arial Black, Arial Black, Gadget, sans-serif ">font-family: Arial Black, Arial Black, Gadget, sans-serif</span><br>
+									<span style="font-family:Times New Roman, Times, serif ">font-family: Times New Roman, Times, serif</span>
+								</td>
+								<td>
+									Можно применять к любому тегу<br>
+									<a href="http://www.wearymax.ru/webmasters/fonts/" target="_blank" style="color: #000; text-decoration: underline;">Безопасные WEB-шрифты</a><br>
+									Но лучше не прописывать, тогда шрифт будет тот же что и на всем сайте
+								</td>
+							</tr>
+							<tr>
+								<td>
+									Размер шрифта
+								</td>
+								<td>
+									font-size: 
+								</td>
+								<td class="line">
+									<span style="font-size: 16px">font-size: 16px</span><br>
+									<span style="font-size: 18px">font-size: 18px</span>
+								</td>
+								<td>
+									Можно применять к любому тегу
+								</td>
+							</tr>
+							<tr>
+								<td>
+									Жирность шрифта
+								</td>
+								<td>
+									font-weight:
+								</td>
+								<td class="line">
+									<span style="font-weight: 100">font-weight: 100 - нормальный</span><br>
+									<span style="font-weight: 600">font-weight: 600 - жирный</span>
+								</td>
+								<td>
+									Можно применять к любому тегу
+								</td>
+							</tr>
+							<tr>
+								<td>
+									Межстрочный интервал
+								</td>
+								<td>
+									line-height:
+								</td>
+								<td class="line">
+									<span style="line-height: 20px"><b>line-height: 20px</b> - Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima officia ipsa placeat vitae accusantium quod, aspernatur quasi cumque quo, quam quia error sapiente praesentium accusamus ex, velit id ducimus reprehenderit!</span><br>
+									<span style="line-height: 40px"><b>line-height: 40px</b> - Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima officia ipsa placeat vitae accusantium quod, aspernatur quasi cumque quo, quam quia error sapiente praesentium accusamus ex, velit id ducimus reprehenderit!</span>
+								</td>
+								<td>
+									Можно применять к любому тегу<br>
+									Значение line-height не должно быть меньше размена шрифта, иначе буквы будут перекрывать друг на друга
+								</td>
+							</tr>
+							<tr>
+								<td>
+									Отступ от края эл-та
+								</td>
+								<td>
+									margin:
+								</td>
+								<td class="line">
+									<div style="border: 1px solid #000; background: #000"><p style=" margin: 10px; background: #FF5A5A">margin: 10px - Устанавливает величину отступа в 10рх от каждого края элемента. Отступом является пространство от границы текущего элемента до внутренней границы его родительского элемента</p></div>
+									<div style="border: 1px solid #000;background: #000; margin-top: 10px"><p style="border: 1px solid #000; margin: 10px 5px 3px 20px; background: #FF5A5A">margin: 10px 5px 3px 20px (верх/право/низ/лево) - Устанавливает разную величину отступа от каждого края.</p></div>
+								</td>
+								<td>
+									Можно применять к любому тегу<br>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									Отступ внутри эл-та(вокруг содержимого элемента)
+								</td>
+								<td>
+									padding:
+								</td>
+								<td class="line">
+									<div style="border: 1px solid #000; background:  #FF5A5A; padding: 20px; ">padding: 20px - Устанавливает величину отступа в 20рх от каждого края элемента. Отступом является пространство от границы текущего элемента до содержимого этого эл-та</div>
+									<div style="border: 1px solid #000;background:  #FF5A5A; padding: 50px 10px 25px 30px;margin-top: 10px">padding: 50px 10px 25px 30px (верх/право/низ/лево) - Устанавливает разную величину отступа от каждого края.</div>
+								</td>
+								<td>
+									Можно применять к любому тегу<br>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									Горизонтальное выравнивание текста
+								</td>
+								<td>
+									text-align:
+								</td>
+								<td class="line">
+									<span style="text-align: center; display: block;">text-align: center;</span><br>
+									<span style="text-align: left;display: block;">text-align: left; (по умолчанию)</span><br>
+									<span style="text-align: right;display: block;">text-align: right;</span><br>
+									<span style="text-align: justify;display: block;"><b>text-align: justify; (растягивает текст от края до края)</b><br> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit magnam sequi explicabo, totam expedita a modi ipsum suscipit consequatur, fuga repudiandae vel fugiat. Temporibus, ipsam magnam minima sunt consequatur doloribus!</span>
+								</td>
+								<td>
+									Можно применять к любому тегу, кроме : span, b, i<br>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									Оформление текста
+								</td>
+								<td>
+									text-decoration:
+								</td>
+								<td class="line">
+									<span style="text-decoration: underline;">text-decoration: underline</span><br>
+									<span style="text-decoration: line-through">text-decoration: line-through</span><br>
+									<span style="text-decoration: overline;">text-decoration: overline</span>
+								</td>
+								<td>
+									Можно применять к любому тегу<br>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									Преобразованием текста элемента в заглавные или прописные символы
+								</td>
+								<td>
+									text-transform:
+								</td>
+								<td class="line">
+									<span>text-transform: capitalize</span> <p style="text-transform: capitalize;">Первый символ каждого слова в предложении будет заглавным. Остальные символы свой вид не меняют.</p><br>
+									<span>text-transform: lowercase</span> <p style="text-transform: lowercase">Все символы текста становятся строчными (нижний регистр).</p><br>
+									<span>text-transform: uppercase</span> <p style="text-transform: uppercase">Все символы текста становятся прописными (верхний регистр).</p>
+								</td>
+								<td>
+									Можно применять к любому тегу<br>
+								</td>
+							</tr>							
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<div class="block block_3" id="block_3">
+				<div class="col-12 title text-center">Дополнительно</div>
+				<div class="col-12 content">
+					<b style="font-size: 20px; text-decoration: underline;">Скрытие ссылок</b>
+					<p>На всех сайтах присутствует скрипт для скрытия исходящих ссылок. Для того что бы сктыть ссылку нужно добавить класс hidli, а путь записать в rel="" :</p>
+					<p><textarea>
+<a href="#" target="_blank" class="hidli" rel="https://errors-seeds-p.com/contact/">Будет скрытая ссылка</a>
+					</textarea>
+					</p>
+				</div>
+				<div class="col-12 content">
+					<b style="font-size: 20px; text-decoration: underline;">Исправление табов</b>
+					<p>На клонах 2.0 в разделе "о нас" и "сотрудничество", табы, в ходе их редактирования не через код, а в редакторе, часто ломаются. Для их исправления необходимо:</p>
+					<p>- Открыть код<br> - Прокрутить до самого начала <br></p>
+					<p><textarea>
+<li class="nav-item"><a class="nav-link" data-toggle="tab" href="#h5" role="tab"><span style="color: inherit;">О нас</span></a></li>
+<li class="nav-item"><a class="nav-link " data-toggle="tab" href="#h7" role="tab"><span style="color: inherit;">Безопасность</span></a></li>
+<li class="nav-item"><a class="nav-link" data-toggle="tab" href="#h1" role="tab"><span style="color: inherit;">Вопросы</span></a></li>
+<li class="nav-item"><a class="nav-link" data-toggle="tab" href="#h2" role="tab"><span style="color: inherit;">Доставка</span></a></li>
+<li class="nav-item active"><a class="nav-link" data-toggle="tab" href="#h3" role="tab"><span style="color: inherit;">Способы оплаты</span></a></li>
+<li class="nav-item"><a class="nav-link " data-toggle="tab" href="#h4" role="tab"><span style="color: inherit;">Замена и возврат</span></a></li>
+					</textarea>
+					</p>
+					<p>- И убрать класс active у всех li</p>
+					<p><textarea>
+<li class="nav-item"><a class="nav-link" data-toggle="tab" href="#h5" role="tab"><span style="color: inherit;">О нас</span></a></li>
+<li class="nav-item"><a class="nav-link " data-toggle="tab" href="#h7" role="tab"><span style="color: inherit;">Безопасность</span></a></li>
+<li class="nav-item"><a class="nav-link" data-toggle="tab" href="#h1" role="tab"><span style="color: inherit;">Вопросы</span></a></li>
+<li class="nav-item"><a class="nav-link" data-toggle="tab" href="#h2" role="tab"><span style="color: inherit;">Доставка</span></a></li>
+<li class="nav-item"><a class="nav-link" data-toggle="tab" href="#h3" role="tab"><span style="color: inherit;">Способы оплаты</span></a></li>
+<li class="nav-item"><a class="nav-link " data-toggle="tab" href="#h4" role="tab"><span style="color: inherit;">Замена и возврат</span></a></li>
+					</textarea>
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer></footer>
+</body>
+<script type="text/javascript">
+	$(".nav-link").click(function(){
+		$(".nav-link").removeClass("active");
+		$(this).addClass("active");
+	})
+</script>
+</html>
